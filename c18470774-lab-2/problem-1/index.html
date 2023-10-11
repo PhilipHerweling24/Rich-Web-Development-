@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script defer src="./script.js"></script>
+    <title>Phone Directory</title>
+  </head>
+
+  <body>
+
+    <h1>Phone Directory</h1>
+
+    <div class="formdiv">
+
+      <form onsubmit="addRow(); return false;" required>
+        <input type="text" id="name" placeholder="Contact Name" required>
+        <input type="number" id="number" min=0 placeholder="Mobile Number" pattern="[0][0-9]{9}" required>
+        <input type="text" id="email" placeholder="Email" required>
+
+        <input type="submit" value="Add Contact">
+      </form>
+
+    </div>
+
+    <div class="searchdiv">
+
+        <label for="searchlab">Search contact by Mobile No:
+          <input type="text" id="search" onkeyup="searchFunction()" placeholder="">
+
+        </label>
+
+    </div>
+
+    <h2>Contacts Summary</h2>
+
+    <div class="contactdiv">
+
+      <table id="my-table" border = "1" CELLPADDING="4" CELLSPACING="3">
+          <tr>
+            <th style="height:40px;width:500px">Name</th>
+            <th style="height:40px;width:500px">Mobile</th>
+            <th style="height:40px;width:500px">Email</th>
+          </tr>
+      </table>
+
+    </div>
+
+    <div id="noResult">
+
+      <h3>Sorry No Results Found. Try typing in a differnt number!</h3>
+
+    </div>
+
+
+  </body>
+
+
+ </html>

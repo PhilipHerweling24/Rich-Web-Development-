@@ -1,0 +1,99 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  background: linear-gradient(to right, #545454
+, #151515);
+  font-family: sans-serif;
+  margin: 20px;
+  min-height: 100vh;
+}
+
+input {
+  background-color: #bebebe;
+  border: 1px #FFFFFF;
+  color: black;
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+#search {
+  width: 80%;
+}
+
+#submit {
+  margin-left: 3%;
+  width: 15%;
+  border-radius: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  background: linear-gradient(315deg, #a9a9a9 0%, #d3d3d3 100%);
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 90%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.card2 {
+  background: linear-gradient(315deg, #a9a9a9 0%, #d3d3d3 100%);
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 90%;
+  padding: 0.5rem;
+}
+
+.avatar {
+  padding: 6px;
+  border-radius: 10px;
+  height: 400px;
+  width: 380px;
+}
+
+.user-info {
+  padding: 6px;
+  color: black;
+}
+
+.user-info p{
+  margin-left: auto;
+}
+
+.user-info h3, p{
+  display: inline;
+}
+
+#user_table {
+  text-align: left;
+  height: 100%;
+  width: 100%;
+}
+
+#repos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.repo {
+  background-color: #a9a9a9;
+  border-radius: 5px;
+  display: inline-block;
+  color: black;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
