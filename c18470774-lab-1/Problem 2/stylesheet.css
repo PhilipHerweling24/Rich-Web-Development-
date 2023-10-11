@@ -1,0 +1,55 @@
+/* Setting margin to 0 zero on the entire webpage */
+* {
+	margin : 0;
+}
+
+/* displaying the grid and setting the height of my grid, and setting the columns
+	to 25% each as asked in the question*/
+
+.grid {
+	display: grid;
+	height: 150px;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+/* setting up my cells to have a black border that is 1px in size
+	and also setting the background colour to blue, (the cells change colour wheb
+	they move)*/
+
+.cell{
+		border: 1px solid #000000;
+		background-color: #81d4fa;
+}
+
+/* Styling the text*/
+.cell p {
+	margin-top: 10px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+/* I use the @media rule to apply a 2x2 grid layout when the
+ 	screen size changes to 720px or lower and i also change the background
+	colour of the cells*/
+@media screen and (max-width: 720px) {
+	.grid {
+		grid-template-columns: 50% 50%;
+	}
+
+	.cell{
+		background-color: #95F985;
+	}
+}
+
+/* I use the @media rule to apply a 4x1 grid layout when the
+ 	screen size changes to 360px or lower and i also change the background
+	colour of the cells*/
+@media screen and (max-width: 360px) {
+	.grid {
+		grid-template-columns: 100%;
+	}
+
+	.cell{
+		background-color: #FDFD66;
+	}
+}
