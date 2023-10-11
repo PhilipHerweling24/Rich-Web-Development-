@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">  
+    <script defer src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
+    <title>Note Taking Web App</title>
+  </head>
+
+  <body>
+
+    <!--
+    creating a div class called form
+    Where I create a form which allows a user to enter
+    a note title and enter a note in a text area
+    -->
+    <div class="form">
+      <h1>Note Taker Web Application</h1>
+      <h2>Add a Note</h2>
+
+      <br><br>
+      <form id="nForm">
+        <label for="title">Title
+          <input type="text" id="title" placeholder="Enter a note title...">
+        </label>
+        <br>
+        <label for="note-body">Note
+          <textarea name="note" id="note" rows="12" cols="40"
+          placeholder="Enter a note..."></textarea>
+        </label>
+        <br><br>
+        <input type="submit" id="add">
+      </form>
+    </div>
+
+    <!--
+    creating a div class called notes
+    which will store all the notes
+    the user creates
+    -->
+    <div id="notes">
+
+    </div>
+
+
+  </body>
+
+
+ </html>

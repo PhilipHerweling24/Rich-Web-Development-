@@ -1,0 +1,22 @@
+* {
+  font-weight: bold;
+}
+
+body {
+  display: grid;
+  margin: auto;
+  padding: 5px;
+}
+
+.form {
+  max-width: 1200px;
+  margin: 1px auto;
+  background-color: #dce0de;
+  text-align: center;
+}
+
+.form timerForm {
+  display: grid;
+  margin: 1px;
+  width: 100%
+}
